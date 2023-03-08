@@ -13,6 +13,7 @@ public class Program1 {
 		
 		driver.get("https://demo.automationtesting.in/Register.html");
 		driver.findElement(By.xpath("//input[@placeholder='First Name']")).sendKeys("Test");
+		driver.findElement(By.xpath("//input[@placeholder='Last Name']")).sendKeys("Test2");
 	}
 
 }
