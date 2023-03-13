@@ -24,10 +24,12 @@ public class Program03 {
 		 driver.get("https://demo.automationtesting.in/Register.html");	
 		 driver.findElement(By.xpath("//input[@placeholder='First Name']")).sendKeys("Test");
 		 screenShot("firstName");
+		 
 		 File srcFN= driver.findElement(By.xpath("//input[@placeholder='First Name']"))
 		 .getScreenshotAs(OutputType.FILE);
 		 File desFN = new File("./screenshot/firstNameElement.png");
 		 FileUtils.copyFile(srcFN, desFN);
+		 
 		 driver.findElement(By.xpath("//input[@placeholder='Last Name']")).sendKeys("Java");
 		 screenShot("lastName");
 		 
